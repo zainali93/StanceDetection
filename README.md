@@ -27,20 +27,12 @@ The proposed Siamese network architecture is illustrated below:
   <em>Proposed Siamese network architecture. Model 1 uses a sigmoid classification head for binary relevance classification, whereas Model 2 uses a softmax classification head for three-way stance classification.</em>
 </p>
 
-The complete prediction pipeline is:
+The complete prediction pipeline is shown in the following figure:
 
-```text
-Headline + Article Body
-          |
-          v
-Model 1: Related / Unrelated
-          |
-          | Related
-          v
-Model 2: Agree / Discuss / Disagree
-          |
-          v
-Final Four-Class Prediction
+<p align="center">
+  <img src="assets/heirarchical_decompostion.png" alt="Heirarchical Decomposition" width="950">
+</p>
+
 ```
 
 ---
