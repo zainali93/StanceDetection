@@ -1,0 +1,50 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Hugging Face / TensorFlow caches
+.cache/
+huggingface/
+huggingfacemodels/
+transformers_cache/
+
+# Training outputs and model checkpoints
+outputs/
+checkpoints/
+checkpoint-*/
+*.h5
+*.keras
+*.ckpt
+*.ckpt.*
+*.pkl
+
+# Logs
+*.log
+logs/
+runs/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE / editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*~
