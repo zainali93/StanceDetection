@@ -20,7 +20,7 @@ Both models use Siamese BERT-based subnetworks with shared weights, followed by 
 The proposed Siamese network architecture is illustrated below:
 
 <p align="center">
-  <img src="assets/framework.png" alt="Proposed Siamese network architecture" width="950">
+  <img src="assets/framework.png" alt="Proposed Siamese network architecture" width="650">
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@ The proposed Siamese network architecture is illustrated below:
 The complete prediction pipeline is shown in the following figure:
 
 <p align="center">
-  <img src="assets/heirarchical_decompostion.png" alt="Heirarchical Decomposition" width="950">
+  <img src="assets/heirarchical_decompostion.png" alt="Heirarchical Decomposition" width="450">
 </p>
 
 ```
