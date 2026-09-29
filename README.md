@@ -30,7 +30,7 @@ The proposed Siamese network architecture is illustrated below:
 The complete prediction pipeline is shown in the following figure:
 
 <p align="center">
-  <img src="assets/heirarchical_decompostion.png" alt="Heirarchical Decomposition" width="450">
+  <img src="assets/heirarchical_decompostion.png" alt="Heirarchical Decomposition" width="350">
 </p>
 
 ```
