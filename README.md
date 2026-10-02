@@ -6,7 +6,9 @@ The work addresses text-based stance detection using a cascaded Siamese network 
 
 The repository provides the implementation for reproducing the cascaded stance detection experiments reported in the paper.
 
----
+## Video Overview
+
+https://github.com/user-attachments/assets/a96861dc-48b3-43f1-af57-441f958663f3
 
 ## Methodology
 
@@ -33,8 +35,6 @@ The complete prediction pipeline is shown in the following figure:
   <img src="assets/heirarchical_decompostion.png" alt="Heirarchical Decomposition" width="350">
 </p>
 
----
-
 ## Repository Structure
 
 ```text
@@ -57,8 +57,6 @@ StanceDetection/
 └── README.md
 ```
 
----
-
 ## Installation
 
 Clone the repository:
@@ -79,8 +77,6 @@ pip install -r requirements.txt
 All commands below assume that they are executed from the root directory of the repository.
 
 Training the Siamese models is computationally intensive, and a CUDA-enabled GPU is strongly recommended. TensorFlow will automatically use compatible GPU devices available in the environment.
-
----
 
 ## Dataset
 
@@ -130,8 +126,6 @@ discuss  -> 1
 disagree -> 2
 ```
 
----
-
 ## Cascaded Siamese Training
 
 The complete training and evaluation pipeline can be run using:
@@ -150,8 +144,6 @@ The script sequentially:
 6. Trains the three-class stance model.
 7. Applies the two models sequentially to the official FNC-1 test set.
 8. Reports class-wise performance, accuracy, and the FNC-1 evaluation score.
-
----
 
 ## Experimental Settings
 
@@ -178,8 +170,6 @@ Training is performed for the full 100 epochs. The weights corresponding to the 
 
 The relevance classifier uses the threshold configured in the experimental pipeline to determine which examples are passed to Model 2.
 
----
-
 ## Evaluation
 
 Evaluation is performed on the official FNC-1 competition test set.
@@ -193,15 +183,11 @@ The script reports:
 
 The FNC-1 metric gives partial credit for correctly identifying whether a headline–article pair is related, with additional credit for predicting the correct stance among related examples.
 
----
-
 ## Reproducibility
 
 Random seeds are fixed for NumPy and TensorFlow, and the random undersampling procedure uses a fixed seed.
 
 The repository provides the cleaned implementation of the experimental pipeline used for the proposed cascaded Siamese approach. For additional details regarding the methodology, experimental setup, and reported results, please refer to the paper.
-
----
 
 ## Paper
 
@@ -211,8 +197,6 @@ The paper is available through Springer:
 
 **Muhammad Zain Ali, Tony Smith, and Bernhard Pfahringer.**  
 Proceedings of the 31st International Conference on Neural Information Processing (ICONIP 2024).
-
----
 
 ## Citation
 
@@ -228,8 +212,6 @@ If you use this work, please cite:
   organization={Springer}
 }
 ```
-
----
 
 ## License
 
